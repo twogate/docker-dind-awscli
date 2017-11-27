@@ -1,4 +1,4 @@
-FROM docker:dind
+FROM docker:latest
 
 RUN apk --update add python py-pip \
   && rm -rf /var/cache/apk/* \
