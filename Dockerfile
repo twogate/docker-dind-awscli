@@ -1,6 +1,6 @@
 FROM docker:latest
 
-RUN apk --update add python3 pip3 \
+RUN apk --update add python3 \
   && rm -rf /var/cache/apk/* \
-  && pip install awscli
-
+  && pip3 install --upgrade pip \
+  && pip3 install awscli
